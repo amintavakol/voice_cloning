@@ -34,15 +34,15 @@ python encoder_preprocess.py <dataset_root> -o <output_dir> -d <datasets> -s <sk
 
 Arguments:
 
-**datasets_root**: Path to the directory containing your LibriSpeech/TTS and VoxCeleb datasets.\ 
+**datasets_root**: Path to the directory containing your LibriSpeech/TTS and VoxCeleb datasets.
 
-**out_dir**: Path to the output directory that will contain the mel spectrograms. If left out, defaults to `<datasets_root>/SV2TTS/encoder/`\
+**out_dir**: Path to the output directory that will contain the mel spectrograms. If left out, defaults to `<datasets_root>/SV2TTS/encoder/`.
 
-**datasets**: Comma-separated list of the name of the datasets you want to preprocess. Only the train set of these datasets will be used. Possible names: librispeech_other, voxceleb1, voxceleb2, timit, vctk.\
+**datasets**: Comma-separated list of the name of the datasets you want to preprocess. Only the train set of these datasets will be used. Possible names: librispeech_other, voxceleb1, voxceleb2, timit, vctk.
 
-**skip_existing**: Whether to skip existing output files with the same name. Useful if this script was interrupted.\
+**skip_existing**: Whether to skip existing output files with the same name. Useful if this script was interrupted.
 
-**no_trim**: Preprocess audio without trimming silences. (NOTE: not recommended, leave this to default)\
+**no_trim**: Preprocess audio without trimming silences. (NOTE: not recommended, leave this to default)
 
 This command preprocesses audio files from datasets, encodes them as mel spectrograms, and writes them to the disk.
 Normally, the outputs are going to be stored in `<dataset_root/SV2TTS/encoder>`.
